@@ -1,0 +1,38 @@
+{
+  "name": "dsh-mecha-boot",
+  "version": "3.2.0",
+  "description": "DeepSeek Harness 机体主题：约 15 秒的配音开场（身份确认 → 神经连接 → 机体和女仆鲸娘的线稿一笔笔描出来 → 上色 → “出击”点亮 → 扫描线扫进桌面），桌面整体换皮（壁纸、装甲切角面板、深色配色）。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "startup",
+    "splash",
+    "boot-animation",
+    "mecha"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./assets/*": "./lib/assets/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}

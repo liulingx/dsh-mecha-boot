@@ -1,0 +1,7 @@
+# dsh-mecha-boot：把插件挂进 profile 配置树。
+# 浏览器半侧由 package.json 的 dsh.client 自动组装，这里只登记一行。
+#
+# 文字、声音等自定义在打包时写死（tools/build.mjs 的参数），这里不用写 config。
+- insert:
+    - id: dsh-mecha-boot
+      name: dsh-mecha-boot
